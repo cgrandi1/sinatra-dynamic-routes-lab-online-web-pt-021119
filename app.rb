@@ -21,12 +21,12 @@ class App < Sinatra::Base
      "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
    end
 
-   get "/:operations/:number1/:number2" do
+   get "/:operation/:number1/:number2" do
      number1 = params[:number1]
      number2 = params[:number2]
-     operations = params[:operations]
+     operation = params[:operation]
 
-     if operations
+     if operation
        "#{number1 + number2}"
      elsif
        "#{number1 - number2}"
@@ -34,7 +34,7 @@ class App < Sinatra::Base
        "#{number1 x number2}"
      else
        "#{number1 / number2}"
-     end 
+     end
    end
 
 
