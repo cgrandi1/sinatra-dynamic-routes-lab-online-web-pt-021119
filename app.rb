@@ -22,11 +22,11 @@ class App < Sinatra::Base
    end
 
    get "/:operation/:number1/:number2" do
-     @number1 = params[:number1]
-     @number2 = params[:number2]
-     @operation = params[:operation]
+     number1 = params[:number1]
+     number2 = params[:number2]
+     operation = params[:operation]
 
-     if @operation
+     if operation
        "#{number1 + number2}"
      elsif
        "#{number1 - number2}"
