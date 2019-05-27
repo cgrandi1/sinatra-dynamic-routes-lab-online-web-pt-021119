@@ -28,7 +28,7 @@ class App < Sinatra::Base
 
      if operation
        "#{number1 + number2}"
-     elsif
+     elsif 'subtract'
        "#{number1 - number2}"
      elsif
        "#{number1 x number2}"
